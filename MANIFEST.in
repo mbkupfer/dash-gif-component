@@ -1,0 +1,5 @@
+include dash_gif_component/dash_gif_component.min.js
+include dash_gif_component/dash_gif_component.dev.js
+include dash_gif_component/metadata.json
+include dash_gif_component/package.json
+include README.md

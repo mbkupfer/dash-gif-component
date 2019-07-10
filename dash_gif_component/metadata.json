@@ -1,0 +1,34 @@
+{
+  "src/lib/components/GifPlayer.react.js": {
+    "description": "GifPlayer is a component the creates a playable\ngif in a dash application. This provides a more \npleasant experience since gifs will not be constantly\nlooping. This component requires a file path to a\ngif as well as a still image to use when the gif is\npaused.",
+    "displayName": "GifPlayer",
+    "methods": [],
+    "props": {
+      "gif": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "A string address to an animated GIF image."
+      },
+      "still": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "A string address to a still preview of the GIF (e.g. JPG, PNG, etc.)"
+      },
+      "autoplay": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "A boolean which can be set true if you want to immediately\nbomard your user with a moving GIF.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  }
+}
