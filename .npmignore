@@ -16,6 +16,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # Development folders and files
+venv/
+__pycache__/ 
+*.pyc
 public
 src
 scripts
