@@ -41,14 +41,14 @@ pip install dash-gif-component
 ### Usage example:
 
 ```python
-import dash_gif_component as Gif
+import dash_gif_component as gif
 import dash
 import dash_html_components as html
 
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
-    Gif.GifPlayer(
+    gif.GifPlayer(
         gif='assets/my-gif.gif',
         still='assets/my-still.png',
     )

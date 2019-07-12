@@ -1,6 +1,6 @@
 import sys
 sys.path.append('..')
-import dash_gif_component as Gif
+import dash_gif_component as gif
 import dash
 import dash_html_components as html
 import dash_core_components as dcc
@@ -22,14 +22,13 @@ app.layout = html.Div([
                 label='gif',
                 value='gif',
                 children=[
-                    Gif.GifPlayer(
+                    gif.GifPlayer(
                         gif='assets/giphy.gif',
                         still='assets/giphy.png',
                     )]
             )
         ])
 ])
-
 
 
 if __name__ == '__main__':
