@@ -16,14 +16,16 @@ Keyword arguments:
 - gif (string; required): A string address to an animated GIF image.
 - still (string; required): A string address to a still preview of the GIF (e.g. JPG, PNG, etc.)
 - autoplay (boolean; default False): A boolean which can be set true if you want to immediately
-bomard your user with a moving GIF."""
+bomard your user with a moving GIF.
+- alt (string; optional): Optional alt text attribute passed to
+img element."""
     @_explicitize_args
-    def __init__(self, gif=Component.REQUIRED, still=Component.REQUIRED, autoplay=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['gif', 'still', 'autoplay']
+    def __init__(self, gif=Component.REQUIRED, still=Component.REQUIRED, autoplay=Component.UNDEFINED, alt=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['gif', 'still', 'autoplay', 'alt']
         self._type = 'GifPlayer'
         self._namespace = 'dash_gif_component'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['gif', 'still', 'autoplay']
+        self.available_properties = ['gif', 'still', 'autoplay', 'alt']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

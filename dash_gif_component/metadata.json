@@ -28,6 +28,13 @@
           "value": "false",
           "computed": false
         }
+      },
+      "alt": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Optional alt text attribute passed to\nimg element."
       }
     }
   }

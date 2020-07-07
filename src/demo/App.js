@@ -9,8 +9,9 @@ class App extends Component {
         return (
             <div>
                 <GifPlayer
-                    gif={'/assets/giphy.gif'}
-                    still={'/assets/giphy.png'}
+                    gif={'demo/assets/giphy.gif'}
+                    still={'demo/assets/giphy.png'}
+                    alt='adorable puppy'
                 />
             </div>
         )

@@ -13,10 +13,11 @@ import './css/gifplayer.min.css';
  */
 export default class GifPlayer extends Component {
     render() {
-        const {gif, still, autoplay} = this.props;
+        const {alt, gif, still, autoplay} = this.props;
         return (
             <React.Fragment>
                 <RSGifPlayer
+                    alt={alt}
                     gif={gif}
                     still={still}
                     autoplay={autoplay}
@@ -48,4 +49,10 @@ GifPlayer.propTypes = {
      * bomard your user with a moving GIF.
      */
     autoplay: PropTypes.bool,
+
+    /**
+     * Optional alt text attribute passed to
+     * img element.
+     */
+    alt: PropTypes.string,
 };
