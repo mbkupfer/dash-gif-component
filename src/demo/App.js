@@ -11,6 +11,7 @@ class App extends Component {
                 <GifPlayer
                     gif={'demo/assets/giphy.gif'}
                     still={'demo/assets/giphy.png'}
+                    alt='adorable puppy'
                 />
             </div>
         )
