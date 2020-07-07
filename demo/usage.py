@@ -25,6 +25,7 @@ app.layout = html.Div([
                     gif.GifPlayer(
                         gif='assets/giphy.gif',
                         still='assets/giphy.png',
+                        alt='adorable puppy',
                     )]
             )
         ])
